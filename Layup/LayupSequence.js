@@ -30,7 +30,7 @@ function s(n) {
 // Measure the runtime of the implementation
 console.time("s(10000)");
 console.log(s(10000).toString()); // Output the result as a string
-console.timeEnd("s(10000)"); // 17.83ms
+console.timeEnd("s(10000)"); // 17.83ms >>> * this off course is just a sample value which changes by each run.
 
 /* Explanation:
 
@@ -41,4 +41,5 @@ console.timeEnd("s(10000)"); // 17.83ms
     b. Discuss any optimizations applied and how they impact the runtime
     The main optimization applied is the use of an iterative approach with memoization to avoid redundant calculations and recursion overhead.
     This reduces the time complexity from O(2^n) (naive recursive approach) to O(n).
+    P.S. also without using BigInt, my solution would fail when n got bigger than ~1600
 */
